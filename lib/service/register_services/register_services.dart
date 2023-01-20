@@ -4,7 +4,6 @@ import 'package:blush/controller/register_screen_controller/register_controller.
 import 'package:blush/view/login_screen/login_screen.dart';
 import 'package:blush/view/register_screen/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -2,6 +2,9 @@ import 'dart:developer';
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:blush/controller/main_catagory_controller/main_catgory_controller.dart';
+import 'package:blush/controller/sub_catagory_controller/sub_catagory_controller.dart';
+import 'package:blush/core/app_models/app_model.dart';
 import 'package:blush/core/color/colours.dart';
 import 'package:blush/core/fonts/fonts.dart';
 import 'package:blush/view/app_home/home_main.dart';
@@ -18,10 +21,13 @@ class MyApp extends StatefulWidget {
 }
 
 bool user = false;
-
+final mainCatgoryController = Get.put(MainCatagoryController());
+final subCatgoryController = Get.put(SubCatagoryController());
 class _MyAppState extends State<MyApp> {
   @override
   void initState() {
+    mainCatgoryController.addToCatagories(data: AppModelClass.catModelList); 
+    subCatgoryController.addToSubCatagories(data: AppModelClass.subCatagoryList); 
     isUserLogedIn();
     super.initState();
   }

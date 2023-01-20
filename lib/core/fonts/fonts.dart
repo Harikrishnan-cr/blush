@@ -21,4 +21,9 @@ class GoogleFont {
 
   static TextStyle splashScreenMainText = GoogleFonts.poppins(
       fontSize: 34, fontWeight: FontWeight.w700, color: commonColorYellow);
+
+
+
+       static TextStyle priceListTextStyleHead = GoogleFonts.abel(
+      fontSize: 22, fontWeight: FontWeight.w600, color: commonColorYellow);
 }
